@@ -504,9 +504,9 @@ public class Component {
      * @return <code>int</code> ms
      */
     public static int MediaPlayerGetSongDuration(MediaPlayer m) {
-        return 0;
+        return m.getDuration();
     }
-    
+
     /**
      * Check if MediPlayer is playing
      * @param m MediaPlayer
@@ -515,7 +515,7 @@ public class Component {
     public static boolean MediaPlayerIsPlaying(MediaPlayer m){
         return m.isPlaying;
     }
-    
+
     /**
      * Enable or Disable loop for the sound
      * @param m MediaPlayer
@@ -524,13 +524,36 @@ public class Component {
     public static void MediaPlayerSetLooping(MediaPlayer m, boolean b){
         m.isLooping = b;
     }
-    
+
     /**
      * Check if the sound is on loop
      * @param m
-     * @return
+     * @return <code>boolean</code> isLooping
      */
     public static boolean MediaPlayerIsLooping(MediaPlayer m){
         return m.isLooping;
     }
+
+    /**
+     * Reset the MediaPlayer to initial state, seeking to 0 milliseconds
+     * @param m MediaPlayer
+     */
+    public static void MediaPlayerReset(MediaPlayer m){
+      m.setSeek(0);
+    }
+
+    /**
+     * Release the sound MediaPlayer is holding onto
+     * @param m MediaPlayer
+     */
+    public static void MediaPlayerRelease(MediaPlayer m){
+      m.continue();
+    }
+
+    /**
+     *
+     */
+     public static void SoundPoolCreateMaxStreamCount(SoundPool sp, int sounds){
+       sp.setMaxSounds(sounds);
+     }
 }
