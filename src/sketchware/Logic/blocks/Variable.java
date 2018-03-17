@@ -47,16 +47,16 @@ public class Variable {
         
         public static void createNewMap(){
             for(int i = 0;i<=variable.length();i++){
-                map[i] = null;   
+                variable[i] = null;   
             }
         }
         
         public static void insertKeyValue(String key, String value){
-           map[key] = value;
+           variable[key] = value;
         }
         
         public static String getKeyValue(String key){
-            return map[key];
+            return variable[key];
         }
     }
 }
