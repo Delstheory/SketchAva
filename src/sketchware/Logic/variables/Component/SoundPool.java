@@ -1,7 +1,7 @@
 package sketch.Logic.variables;
 
 /**
- * @author Vladg24YT
+ * @author Vladg24
  */
 public class SoundPool {
 
