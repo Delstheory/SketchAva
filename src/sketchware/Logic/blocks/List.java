@@ -6,5 +6,15 @@ package sketch.Logic.blocks;
  */
 
 public class List {
+    class String {
+        
+    }
     
+    class Number {
+        privaet Number 
+    }
+    
+    class Map {
+        private String map[][];
+    }
 }
