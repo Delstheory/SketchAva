@@ -1,36 +1,16 @@
 package sketch.Logic.variables;
 
-public class Intent extends Activity {
+public class Intent {
 
-    public static String action;
-    public static String data;
-    public static Activity screen;
-    public static String flag;
+    private static String action;
+    private static String data;
+    private static Activity screen;
+    private static String flag;
 
     public Intent() {
-
+    
     }
 
-    public static String keyGetVal(String key) {
-        return IKey.toKey(key).getExtraKey();
-    }
-
-    public static void keySetVal(String key, String value) {
-        IKey.toKey(key).putExtraKey(value);
-    }
-
-}
-
-class IKey {
-
-    //VARIABLES\\
-    private static String keyValue;
-
-    //CONSTRUCTOR\\
-    public IKey(String name) {
-    }
-
-    //METHODS\\
     public static void putExtraKey(String value) {
         keyValue = value;
     }
@@ -38,8 +18,23 @@ class IKey {
     public static String getExtraKey() {
         return keyValue;
     }
-
-    public static IKey toKey(String s) {
-        return new IKey(s);
+    
+    public static void setAction(String act){
+        action = act;   
+    }
+    
+    public static void setScreen(Activity a){
+        screen = a;   
+    }
+    
+    public static void setFags(String flag){
+        flag = f;   
+    }
+    
+    public static void startActivity(Intent i){
+        JFrame frame = new JFrame();
+        //Change to fullscreen
+        frame.setBounds(0, 0, 600, 800);
+        frame.swtVisible(true);
     }
 }
