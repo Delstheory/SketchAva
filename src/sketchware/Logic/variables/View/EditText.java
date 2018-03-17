@@ -1,7 +1,7 @@
 package sketch.Logic.variables;
 
 /**
- * @author Vladg24
+ *@author Vladg24
 **/
 
 
