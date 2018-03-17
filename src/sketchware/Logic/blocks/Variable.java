@@ -5,5 +5,19 @@ package sketch.Logic.blocks;
  * @author Admin
  */
 public class Variable {
+    class Number {
+        public static void addVariable(){
+            
+        }
+    }
     
+    class String {
+        public static void addVariable(){
+            
+        }
+    }
+    
+    class Boolean {
+        
+    }
 }
