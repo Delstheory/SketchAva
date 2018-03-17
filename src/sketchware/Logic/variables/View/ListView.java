@@ -1,8 +1,7 @@
 package sketch.Logic.variables;
 
 /**
- *
- * @author Admin
+ * @author Vladg24
  */
 public class ListView {
     
