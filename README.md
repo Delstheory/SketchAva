@@ -1,5 +1,7 @@
 # SketchAva
 
+`status: NOT_FINISHED`
+
 A Java SE 7 library, which allows you to use Sketchware widgets/functions in your code.
 
 <a href="sketchware.io"><strong>Sketchware official site</strong></a>
